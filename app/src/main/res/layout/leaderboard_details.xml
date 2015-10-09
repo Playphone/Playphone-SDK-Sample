@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layoutDashboardList"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/incBreadCrumbs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        layout="@layout/breadcrumbs" >
+    </include>
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Leaderboard ID"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:id="@+id/txtLeaderboardIdDesc" />
+
+        <EditText
+            android:id="@+id/txtLeaderboardName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip" >
+
+        <EditText
+            android:id="@+id/editInput"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:inputType="number" />
+
+        <Button
+            android:id="@+id/btnUpdateScore"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Update score" android:layout_width="wrap_content"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutLeaderboards"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Refresh Scores"
+            android:id="@+id/btnGetScore"
+            android:layout_gravity="center_horizontal" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtDisplayScore"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.66"
+            android:gravity="center_horizontal" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <include
+        android:id="@+id/incBreadCrumbs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        layout="@layout/breadcrumbs" >
+    </include>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/incBreadCrumbs"
+        android:layout_marginTop="10dip"
+        android:text="Type some text to save data"
+        android:textAppearance="?android:attr/textAppearanceMedium" >
+    </TextView>
+
+    <EditText
+        android:id="@+id/editInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="15dp"
+        android:inputType="text"
+        android:visibility="gone" >
+    </EditText>
+
+    <Button
+        android:id="@+id/btnWrite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/editInput"
+        android:layout_marginTop="34dp"
+        android:text="Store data" >
+    </Button>
+    
+    <Button
+        android:id="@+id/btnRead"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/editInput"
+        android:layout_marginTop="80dp"
+        android:text="Load locally stored data" >
+    </Button>
+    
+    <Button
+        android:id="@+id/read_remote_cloud_storage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/btnRead"
+        android:text="Load remotely stored data" />
+
+    <TextView
+        android:id="@+id/txtResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignRight="@+id/btnRead"
+        android:layout_below="@+id/btnRead"
+        android:layout_marginTop="29dp"
+        android:textAppearance="?android:attr/textAppearanceLarge" >
+    </TextView>
+
+    <Button
+        android:id="@+id/btn_clear_all"
+        android:layout_width="wrap_content"
+        android:layout_height="40dip"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/txtResult"
+        android:layout_marginRight="20dp"
+        android:textSize="12sp"
+        android:text="Clear all" />
+    
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/btn_clear_all"
+        android:layout_marginTop="13dp"
+        android:text="Player Name"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/txt_player_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView3"
+        android:layout_alignBottom="@+id/textView3"
+        android:layout_alignParentRight="true"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Player Name value">
+        <requestFocus />
+     </EditText>
+    
+    <TextView
+        android:id="@+id/TextView01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/txt_level"
+        android:layout_alignBottom="@+id/txt_level"
+        android:layout_alignParentLeft="true"
+        android:text="Level"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    
+    <EditText
+        android:id="@+id/txt_level"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_player_name"
+        android:layout_marginTop="26dp"
+        android:layout_alignParentRight="true"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Level value" >
+    </EditText>
+    
+    
+    <TextView
+        android:id="@+id/TextView02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_level"
+        android:layout_marginTop="26dp"
+        android:layout_alignParentLeft="true"
+        android:text="Life"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    
+    
+    
+    
+    <EditText
+        android:id="@+id/txt_life"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/TextView02"
+        android:layout_alignBottom="@+id/TextView02"
+        android:layout_alignParentRight="true"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Life value" />
+
+        
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:text="Save and load data stored through the Data API" />
+
+</RelativeLayout>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Not yet implemented!</string>
+    <string name="app_name">Playphone SDK3 Demo</string>
+    <!-- Virtual Item pages -->
+    <string name="vitems_description">These are the items used in the game</string>
+    <string name="playphone_store_description">Users can purchase these items on the Playphone Store</string>
+    <string name="user_inventory_description">Inventory can be tracked per user</string>
+    <string name="get_virtual_items">Get Virtual Items</string>
+    <string name="get_virtual_currencies">Get Virtual Currencies</string>
+    <string name="get_vshop_categories_list">VShop Categories List</string>
+    <string name="get_vshop_packs_list">VShop Packs List</string>
+    <string name="get_buy_vshop_packs">Buy VShop Packs</string>
+    <string name="login">Login</string>
+    <string name="logout">Logout</string>
+    <string name="hide_launcher_icon">Hide Launcher Icon</string>
+    <string name="show_launcher_icon">Show Launcher Icon</string>
+    <string name="show_dashboard">Show Dashboard</string>
+    <string name="inventory_list">Inventory List</string>
+    <string name="manage_inventory">Manage Inventory</string>
+    <string name="details_current_user">Details for the current user</string>
+    <string name="friend_details">Buddy details</string>
+    <string name="game">Game : </string>
+    <string name="game_set">Game set : </string>
+    <string name="game_id">Game id :   </string>
+    <string name="score_posting">Score posting</string>
+    <string name="information_extraction">Information extraction</string>
+    <string name="game_leaderboard">Game leaderboard</string>
+    <string name="player_leaderboard">Player leaderboard</string>
+    <string name="period">Period : </string>
+    <string name="send_request">Send request</string>
+    <string name="player">Player : </string>
+    <string name="current">Current</string>
+    <string name="custom">Custom</string>
+    <string name="all_time">All Time</string>
+    <string name="week">Week</string>
+    <string name="month">Month</string>
+    <string name="player_id">Player id : </string>
+    <string name="get_server_info">POP!</string>
+    <string name="current_room">Current game room</string>
+    <string name="any_room">Any game room</string>
+    <string name="store_cookie">Store cookie</string>
+    <string name="read_cookies">Read cookies</string>
+    <string name="room_list">Room list : </string>
+    <string name="reload_list">Reload list</string>
+    <string name="exit">Exit</string>
+    <string name="yousure">Are you sure ?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="post_score">Post score</string>
+    <string name="expansionListButton">get list</string>
+    <string name="expansionDownloadButton">download</string>
+    <string name="more_games">More Games By Developer</string>
+    <string name="open_store_page">Open Game Page in Store</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_billing">TrivialDrive</string>
+    <string name="achievement_hint">Type the id of the achievement you wish to unlock (for this app type 5, 6 or 7)</string>
+
+</resources>

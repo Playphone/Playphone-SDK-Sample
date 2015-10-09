@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/incBreadCrumbs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        layout="@layout/breadcrumbs" >
+    </include>
+	
+    
+    <Button
+            android:id="@+id/btnFacebookConnect"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Facebook Connect" />
+
+        <Button
+            android:id="@+id/btnFacebookPost"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Facebook Post" />
+        
+        <Button
+            android:id="@+id/btnFacebookSingleRequest"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Facebook Single Friend Request" />
+        
+        <Button
+            android:id="@+id/btnFacebookMultiRequest"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Facebook Multiple Friends Request" />
+        
+        <Button
+            android:id="@+id/btnFacebookOpenGraph"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Facebook Open Graph" />
+        
+
+           
+
+</LinearLayout>
