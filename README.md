@@ -8,14 +8,14 @@ Instructions on how to run the sample
 
 Prerequisites: You must have a Playphone Developer account. If you do not have an account, you can create a new one [here](http://developer.playphone.com).
 
-1. [Clone the repository](#clone-the-repository)
-2. [Create a new game on Developer Portal](#create-a-new-game-on-developer-portal)
-3. [Open Project in Android Studio](#open-project-in-android-studio)
-4. [Replace Secret Key and License Key](#replace-secret-key-and-license-key)
-5. [Change package name](#change-package-name)
-6. [Add In-app Products](#add-in-app-products)
-7. [Add Leaderboards](#add-leaderboards)
-8. [Add Achievements](#add-achievements)
+1. [Clone the repository](#step-1-clone-the-repository)
+2. [Create a new game on Developer Portal](#step-2-create-a-new-game-on-developer-portal)
+3. [Open Project in Android Studio](#step-3-open-project-in-android-studio)
+4. [Replace Secret Key and License Key](#step-4-replace-secret-key-and-license-key)
+5. [Change package name](#step-5-change-package-name)
+6. [Add In-app Products](#step-6-add-in-app-products)
+7. [Add Leaderboards](#step-7-add-leaderboards)
+8. [Add Achievements](#step-8-add-achievements)
 
 --------------------
 
