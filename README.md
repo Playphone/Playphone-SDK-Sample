@@ -29,7 +29,8 @@ Step 2: Create a new game on Developer Portal
   - On the left navigation bar, click on 'My Games' tab
   - Click on 'Add Game'
   - Fill up the information. For now, you may use any name you wish
-  - Click on 'Create and Continue'
+  - Click on 'Create and Continue'  
+  <img src="http://playphone-sdk-cdn.s3.amazonaws.com/docs/images/create_and_continue.png"/>
 
 Step 3: Open project in Android Studio
 --------------------
@@ -49,11 +50,11 @@ Step 4: Replace Secret Key and License Key
   - Login to [Playphone Developer Portal](http://developer.playphone.com) with your Playphone Developer account
   - On the left navigation bar, click on 'My Games' tab
   - Click into the game that you added in Step 2 above
-  - Go to XXX
-  - Find and copy the 'Playphone Public License Key'
-  - In `BillingActivity.java`, find the following line of code and place your Playphone License Key within the quotes.  
+  - At the top navigation tabs, click on 'General'
+  - Find and copy the 'License Key for ZDK'
+  - In `BillingActivity.java`, find the following line of code and place your License Key within the quotes.  
   ```base64EncodedPublicKey = "CONSTRUCT_YOUR_PLAYPHONE_KEY_AND_PLACE_IT_HERE";```
-  - *(Optional) If you have used Google's `TrivialDrive` sample before and you have a Google License Key, you can find the following line of code and place your Google License Key within the quotes.*  
+  - *(Optional) If you have used Google's* `TrivialDrive` *sample before and you have a Google License Key, you can find the following line of code and place your Google License Key from your* `TrivialDrive` *app within the quotes.*  
   ```base64EncodedPublicKey = "CONSTRUCT_YOUR_GOOGLE_KEY_AND_PLACE_IT_HERE";```
 
 Step 5: Change package name
@@ -66,16 +67,23 @@ Step 5: Change package name
     - In Android Studio, go to your Android manifest file and locate the following line  
     ```package="com.playphone.sdk3sample" ```
     - Highlight the entire package name within the quotes
-    - Click on Edit -> Find -> Replace in path... *(or hit SHIFT+CMD+R or SHIFT+CTRL+R)*
-    - Type in your new package name e.g. `com.yourcompanyname.awesomegame` and click 'Find'
+    - Click on Edit -> Find -> Replace in path... *(or hit SHIFT+CMD+R or SHIFT+CTRL+R)*  
+    <img src="http://playphone-sdk-cdn.s3.amazonaws.com/docs/images/change_package_name_1.png" width="500" height="400"/>
+    - Type in your new package name e.g. `com.yourcompanyname.awesomegame` and click 'Find'  
+    <img src="http://playphone-sdk-cdn.s3.amazonaws.com/docs/images/change_package_name_2.png"/>
     - Wait for Android Studio to finish searching
-    - Once done, click on 'All Files' in the pop-up dialog
+    - Once done, click on 'All Files' in the pop-up dialog  
+    <img src="http://playphone-sdk-cdn.s3.amazonaws.com/docs/images/change_package_name_3.png" />
   - Change `build.gradle` file
-    - Navigate to `app/src`
-    - In your `build.gradle` file, change the `applicationId` to your new package name
+    - Navigate to `app/src`  
+    <img src="http://playphone-sdk-cdn.s3.amazonaws.com/docs/images/change_package_name_4.png"/>
+    - In your `build.gradle` file, change the `applicationId` to your new package name  
+    <img src="http://playphone-sdk-cdn.s3.amazonaws.com/docs/images/change_package_name_5.png"/>
   - Invalidate caches and restart Android Studio
-    - Click on File -> Invalidate Caches / Restart...
+    - Click on File -> Invalidate Caches / Restart...  
+    <img src="http://playphone-sdk-cdn.s3.amazonaws.com/docs/images/change_package_name_6.png"/>
     - Click on 'Invalidate and Restart'
+    <img src="http://playphone-sdk-cdn.s3.amazonaws.com/docs/images/change_package_name_7.png"/>
 
 Step 6: Add In-app Products
 --------------------
@@ -85,7 +93,8 @@ Step 6: Add In-app Products
     - Click into the game that you added in Step 2 above
     - Go to the 'In-app Products' tab and click on 'Add In-app Product'
     - Choose **Consumable** for this product, and make sure the **Google Play ID/Name is set to 'gas'**
-    - Fill in the rest of the details as you wish, and click on 'Save and Continue'
+    - Fill in the rest of the details as you wish, and click on 'Save and Continue'  
+    <img src="http://playphone-sdk-cdn.s3.amazonaws.com/docs/images/save_and_continue.png" />
   - Add Premium
     - Follow the same steps as you did for the 'gas' item above, with the following exception: Choose **Durable** for this product, and make sure the **Google Play ID/Name is set to 'premium'**
     - Fill in the rest of the details as you wish, and click on 'Save and Continue'
@@ -113,7 +122,8 @@ Step 7: Add Leaderboards
 **Now that you have added a leaderboard, you are ready to test Leaderboards in the sample app.**
   - Manually type in the leaderboard ID and the score that you wish to post
   - Tap 'Update Score' to post your score
-  - Tap 'Refresh Scores' to fetch the latest rankings
+  - Tap 'Refresh Scores' to fetch the latest rankings  
+  <img src="http://playphone-sdk-cdn.s3.amazonaws.com/docs/images/leaderboards_1.png" width="532" height="449" />
 
 Step 8: Add Achievements
 --------------------
@@ -124,4 +134,5 @@ Step 8: Add Achievements
   - Take note of the automatically generated **achievement ID**  
   
 **Now that you have added an achievement, you are ready to test Achievements in the sample app.**
-  - Manually type in the achievement ID and tap on 'Unlock Achievement!'
+  - Manually type in the achievement ID and tap on 'Unlock Achievement!'  
+  <img src="http://playphone-sdk-cdn.s3.amazonaws.com/docs/images/achievements_1.png" width="200" height="400" />
