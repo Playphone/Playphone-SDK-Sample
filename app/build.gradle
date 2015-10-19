@@ -20,5 +20,5 @@ android {
 
 dependencies {
     compile 'com.android.support:appcompat-v7:22.2.1'
-    compile files('libs/PSGN.3.0.0.476.jar')
+    compile 'com.playphone:playphone-sdk-android:3.0.0'
 }
