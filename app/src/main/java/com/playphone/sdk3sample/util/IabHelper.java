@@ -273,7 +273,7 @@ public class IabHelper {
         Intent serviceIntent = new Intent("com.android.vending.billing.InAppBillingService.BIND");
         serviceIntent.setPackage("com.android.vending");
         if (mUseGooglePlay) {
-            if (!Helper.queryIntentServices(Helper.getPackageManager(mContext), serviceIntent, 0).isEmpty()) {
+            if (!mContext.getPackageManager().queryIntentServices(serviceIntent, 0).isEmpty()) {
                 // service available to handle that Intent
                 mContext.bindService(serviceIntent, mServiceConn, Context.BIND_AUTO_CREATE);
             } else {
@@ -285,7 +285,7 @@ public class IabHelper {
                 }
             }
         } else {
-            if (!Helper.queryIntentServices(mContext.getPackageManager(), serviceIntent, 0).isEmpty()) {
+            if (!Helper.queryIntentServices(Helper.getPackageManager(mContext), serviceIntent, 0).isEmpty()) {
                 // service available to handle that Intent
                 Helper.bindService(mContext, serviceIntent, mServiceConn, Context.BIND_AUTO_CREATE);
             } else {
