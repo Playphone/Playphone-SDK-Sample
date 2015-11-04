@@ -51,7 +51,7 @@ Step 4: Replace Secret Key and License Key
   - On the left navigation bar, click on 'My Games' tab
   - Click into the game that you added in Step 2 above
   - At the top navigation tabs, click on 'General'
-  - Find and copy the 'License Key for ZDK'
+  - Find and copy the 'Public License Key'
   - In `BillingActivity.java`, find the following line of code and place your License Key within the quotes.  
   ```base64EncodedPublicKey = "CONSTRUCT_YOUR_PLAYPHONE_KEY_AND_PLACE_IT_HERE";```
   - *(Optional) If you have used Google's* `TrivialDrive` *sample before and you have a Google License Key, you can find the following line of code and place your Google License Key from your* `TrivialDrive` *app within the quotes.*  
