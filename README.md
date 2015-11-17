@@ -1,4 +1,4 @@
-Playphone-SDK-Sample
+Playphone-SDK-Sample (Android)
 ==================
 
 _This is a sample application demonstrating usage of Playphone SDK. **You will not be able to run this sample as-is**. Please follow the instructions as described below before you run the sample._
